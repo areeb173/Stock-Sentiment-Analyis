@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app) 
 
 @app.route('/sentiment', methods=['GET'])
 def get_sentiment():
@@ -41,7 +41,6 @@ def get_sentiment():
             else:
                 time = date_data[-1]
 
-            # We assume all articles are from today
             date = datetime.today().date()
 
             score = vader.polarity_scores(title)['compound']
