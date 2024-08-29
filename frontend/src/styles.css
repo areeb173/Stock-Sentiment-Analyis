@@ -1,0 +1,16 @@
+
+.container {
+    margin-top: 0;
+    background-color: rgb(109, 109, 109);
+}
+
+.output-positive {
+    background-color: green;
+    border-width: 3px;
+    border-color: black;
+}
+.output-negative {
+    background-color: red;
+    border-width: 3px;
+    border-color: black;
+}
